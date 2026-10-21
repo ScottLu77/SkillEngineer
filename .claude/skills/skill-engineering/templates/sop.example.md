@@ -12,5 +12,5 @@ description: 當使用者要求把 README 翻譯成繁體中文時必須使用�
 
 ### Phase 2 -- 自我檢查
 
-1. READ 重新讀取 `docs/zh-tw/README.md`。
+1. READ 重新讀取 `docs/zh-tw/README.md`, 讀完後進入下一步。
 2. THINK 逐段核對譯文是否漏段; 若無漏段, 則結束本 skill; 否則記下漏段, 回到 Phase 1 第 2 步補譯。

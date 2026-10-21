@@ -92,7 +92,7 @@ feat: add retry to upload client
 
 ### Bad example
 
-一條塞了多個要求, 且用了無法檢查的模糊用語
+第 1 條塞了多個要求; 第 2 條以 `- SHOULD:` 開頭, 且用了無法檢查的模糊用語
 
 ```
 - MUST: 標題不超過 50 個字元、以動詞開頭且結尾不加句號。

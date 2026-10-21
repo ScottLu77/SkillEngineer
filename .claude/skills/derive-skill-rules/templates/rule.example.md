@@ -1,12 +1,14 @@
 ## Rule 1 -- Commit 標題寫作規則
 
-- MUST: 格式為 `<type>: <摘要>`, type 只能是 feat、fix、docs、refactor、test、chore 之一。
+- MUST: 格式為 `<type>: <摘要>`。
+- MUST: type 只能是 feat、fix、docs、refactor、test、chore 之一。
 - MUST: 標題不超過 50 個字元。
-- MUST: 摘要以動詞開頭, 結尾不加句號。
+- MUST: 摘要以動詞開頭。
+- MUST: 摘要結尾不加句號。
 
 ### Good example
 
-type 合法、長度在 50 字元內、摘要以動詞開頭且無句號
+格式正確、type 合法、長度在 50 字元內、摘要以動詞開頭且無句號
 
 ```
 feat: add retry to upload client
