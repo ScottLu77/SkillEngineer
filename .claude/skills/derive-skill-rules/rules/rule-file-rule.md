@@ -1,6 +1,7 @@
 ## Rule 1 -- Rule 區塊寫作規則
 
-- MUST: 格式為 `## Rule N -- <抬頭>`, N 從 1 開始連續編號。
+- MUST: 格式為 `## Rule N -- <抬頭>`。
+- MUST: N 從 1 開始連續編號。
 - MUST: 抬頭寫明規則管轄的對象 ex. `Commit 標題寫作規則`。
 - MUST: 每條 Rule 依序包含: MUST 條列、`### Good example`、`### Bad example`。
 
@@ -55,7 +56,7 @@ Reuse the upload token.
 
 ### Bad example
 
-編號跳號、抬頭格式錯誤、缺 Bad example
+編號跳號、Rule 3 抬頭格式錯誤且未寫明對象、Rule 1 缺 Bad example、Rule 3 缺兩個 example
 
 ````
 ## Rule 1 -- Commit 標題寫作規則
@@ -77,7 +78,8 @@ feat: add retry
 
 ## Rule 2 -- MUST 條列寫作規則
 
-- MUST: 每條以 `- MUST: ` 開頭, 一條只寫一個可檢查的要求。
+- MUST: 每條以 `- MUST: ` 開頭。
+- MUST: 一條只寫一個可檢查的要求。
 - MUST: 不寫模糊用語 ex.「適當」、「視情況」、「必要時」。
 
 ### Good example
@@ -103,7 +105,8 @@ feat: add retry
 
 - MUST: Good example 與 Bad example 各自依序包含: 一行說明、一個 fenced code block。
 - MUST: 說明寫出範例符合或違反了哪些 MUST。
-- MUST: 兩個範例用同一情境, 且 Bad example 至少違反本條 Rule 一個 MUST。
+- MUST: 兩個範例用同一情境。
+- MUST: Bad example 至少違反本條 Rule 一個 MUST。
 
 ### Good example
 
