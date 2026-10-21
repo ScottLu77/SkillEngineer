@@ -37,20 +37,20 @@
 
 - MUST: 每一步以動作詞開頭且只做一個動作: READ 讀檔、WRITE 寫檔、THINK 分析判斷、ASK 問使用者、DELEGATE 分派給其他 skill 或 script。
 - MUST: ASK 寫出具體問題; DELEGATE 寫出對象、傳入內容、預期拿回的結果。
-- MUST: 每一步結尾寫明去向, 只用四種寫法: 進入下一步、進入第 N 步、進入 Phase N 第 M 步、結束本 skill (往回跳寫「回到」); 有條件判斷時每個分支各寫去向。
-- MUST: 需遵守規則檔的步驟寫「依本 skill 的 `rules/<name>.md`」, 執行前先讀取該檔。
+- MUST: 每一步結尾寫明去向, 目的地只用五種: 下一步、本步、第 N 步、Phase N 第 M 步 (M 為 1 時可省略)、結束本 skill; 往前寫「進入」, 往回寫「回到」; 有條件判斷時每個分支各寫去向。
+- MUST: 需遵守規則檔或範本檔的步驟寫「依本 skill 的 `rules/<name>.md`」或「依本 skill 的 `templates/<name>.md`」, 執行前先讀取該檔。
 - MUST: 不寫模糊用語 ex.「適當」、「視情況」、「必要時」。
 
 ### Good example
 
-動作詞、去向、分支、ASK 問題、DELEGATE 內容、規則檔引用皆正確
+動作詞、去向、分支、ASK 問題、DELEGATE 內容、規則檔與範本檔引用皆正確
 
 ```
 1. READ 讀取 `docs/en/README.md`, 讀完後進入下一步。
 2. THINK 判斷文件是否超過 500 行; 若超過, 則進入下一步; 否則進入第 4 步。
 3. DELEGATE 分派給 `split-doc` skill, 傳入 `docs/en/README.md`, 預期拿回拆分後的檔案路徑清單, 拿到後進入下一步。
-4. ASK 向使用者提問「譯文要使用繁體中文還是簡體中文?」, 得到答案後進入下一步。
-5. WRITE 依本 skill 的 `rules/translation-rule.md`, 以前一步的語言翻譯內容並寫入 `docs/zh-tw/README.md`, 寫完後結束本 skill。
+4. ASK 向使用者提問「譯文要使用繁體中文還是簡體中文?」; 若答案不在兩者之內, 則回到本步; 否則進入下一步。
+5. WRITE 依本 skill 的 `rules/translation-rule.md` 與 `templates/readme.md`, 以前一步的語言翻譯內容並寫入 `docs/zh-tw/README.md`, 寫完後結束本 skill。
 ```
 
 ### Bad example
