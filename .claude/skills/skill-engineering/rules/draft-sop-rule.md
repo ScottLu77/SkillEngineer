@@ -1,12 +1,12 @@
-## Rule 1 -- High-level SOP 步驟寫作規則
+## Rule 1 -- High-level SOP 寫作規則
 
 - MUST: 以編號清單列出。
-- MUST: 每項格式為 `**動詞短語**: 說明`。
-- MUST: 說明只寫「要達成什麼」, 不寫「怎麼做」。
+- MUST: 每個步驟格式為 `**動詞短語**: 說明`。
+- MUST: 說明只寫「要做什麼事」, 不寫「怎麼做」。
 
 ### Good example
 
-編號清單、粗體動詞短語加冒號、說明只寫要達成的結果
+合乎標準的 High-level SOP
 
 ```
 1. **翻譯文件**: 產出 `docs/en/README.md` 的繁體中文版本。
@@ -16,7 +16,7 @@
 
 ### Bad example
 
-格式不符 (缺粗體、缺冒號、開頭不是動詞短語), 且說明寫成了操作細節
+格式錯誤, 並且說明裡包含實作細節
 
 ```
 1. 翻譯: READ 讀取 `docs/en/README.md`, 逐段翻譯後 WRITE 寫入 `docs/zh-tw/README.md`。
