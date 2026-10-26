@@ -1,7 +1,7 @@
 ## Rule 1 -- Phase 寫作規則
 
 - MUST: <Phase 編號> 從 1 開始連續編號。
-- MUST: <抬頭> 沿用 high-level SOP 對應步驟的動詞短語, 一步對應一個 Phase。
+- MUST: <Title> 沿用 high-level SOP 對應步驟的動詞短語, 一步對應一個 Phase。
 
 ### Good example
 
