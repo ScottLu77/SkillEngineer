@@ -26,6 +26,6 @@ description: 為目標 skill 的流程步驟建立 rules/ 規則檔時必須使�
 ### Phase 4 -- 檢查產出物
 
 1. DELEGATE 分派給本 skill 的 `scripts/find-signal-sentences.sh`, 傳入修改後的目標 skill 的 `SKILL.md`, 到下一步。
-2. THINK 參考本 skill 的 `rules/rule-candidate-rule.md`、`rules/rule-rule.md` 與 `templates/rule.md` 審核目標 skill: (a) 第 1 步輸出的每一行都對應判定清單中的 `流程` 或 `指引` 條目 (b) 每筆規則候選都已寫成規則檔中的 MUST (c) 每個規則檔都被 `SKILL.md` 引用; 若有不通過處, 則到下一步; 否則到第 4 步。
+2. THINK 參考本 skill 的 `rules/rule-candidate-rule.md`、`rules/rule-rule.md` 與 `templates/rule.md` 審核目標 skill: (a) 第 1 步輸出的每一行都對應判定清單中的 `流程` 或 `指引` 條目 (b) 每筆規則候選都已寫成規則檔中的 MUST (c) 每個規則檔都被 `SKILL.md` 引用 (d) 每個新增或修改的規則檔都符合本 skill 的 `rules/rule-rule.md` 全部 MUST; 若有不通過處, 則到下一步; 否則到第 4 步。
 3. WRITE 修正不通過處, 回第 1 步。
 4. TELL 告知使用者新增或修改的規則檔與 `SKILL.md` 中被移除的原句, 結束本 skill。
