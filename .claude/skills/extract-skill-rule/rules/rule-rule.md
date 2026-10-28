@@ -1,6 +1,6 @@
 ## Rule 1 -- Rule 標題行寫作規則
 
-- MUST: <Rule 編號> 從 1 開始連續編號。
+- MUST: code fence 外的 <Rule 編號> 從 1 開始連續編號。
 - MUST: <抬頭> 以「規則」二字結尾。
 
 ### Good example
@@ -23,7 +23,7 @@ commit message 規則檔的 Rule 標題行錯誤案例
 
 ## Rule 2 -- MUST 細則的寫作規則
 
-- MUST: <必須遵守的細則> 只看產出物就能回答是或否。
+- MUST: 兩位審查員只看產出物各自檢查 <必須遵守的細則>, 會得到相同的是或否判定。
 - MUST: 每條 MUST 只寫一個要求。
 - MUST: Rule 下的每條 MUST 都約束 <抬頭> 中點名的同一個產出物部分。
 
@@ -50,11 +50,12 @@ commit message Header 細則的錯誤案例
 
 ## Rule 3 -- example 寫作規則
 
-- MUST: 每個 `## Rule <Rule 編號>` 底下恰好有一個 `### Good example` 與一個 `### Bad example`。
+- MUST: code fence 外, 每個 `## Rule <Rule 編號>` 底下恰好有一個 `### Good example`。
+- MUST: code fence 外, 每個 `## Rule <Rule 編號>` 底下恰好有一個 `### Bad example`。
 - MUST: <說一下這個例子在作什麼> 只寫一行。
 - MUST: <例子列表> 用 code fence 包圍起來。
-- MUST: Good example 要符合本 Rule 全部 MUST。
-- MUST: Bad example 至少違反本 Rule 的一條 MUST。
+- MUST: Good example 視為獨立檔案時, 要符合本 Rule 全部 MUST。
+- MUST: Bad example 視為獨立檔案時, 至少違反本 Rule 的一條 MUST。
 
 ### Good example
 
