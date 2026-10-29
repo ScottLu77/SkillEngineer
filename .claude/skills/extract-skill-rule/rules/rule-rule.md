@@ -28,8 +28,9 @@ commit message 規則檔的 Rule 標題行錯誤案例
 - MUST: code fence 外, 每個 Rule 至少有一條 MUST。
 - MUST: code fence 外, 每個 Rule 的頂層清單項目都以 `- MUST: ` 開頭。
 - MUST: 兩位審查員只看產出物各自檢查 <必須遵守的細則>, 會得到相同的是或否判定。
-- MUST: 每條 MUST 只寫一個要求。
+- MUST: 每條 MUST 只管一個對象; 同一個對象的多個條件可以合寫成一條。
 - MUST: Rule 下的每條 MUST 都約束 <抬頭> 中點名的同一個產出物部分。
+- MUST: 檔案中沒有兩條 MUST 對同一個產出物部分提出相同或相反的要求。
 
 ### Good example
 
@@ -60,8 +61,8 @@ commit message Header 細則的錯誤案例
 - MUST: code fence 外, 每個 `## Rule <Rule 編號>` 底下恰好有一個 `### Bad example`。
 - MUST: <說一下這個例子在作什麼> 恰好一行, 且不是空白行。
 - MUST: 每個 example 段在說明行之外只有一個 code fence, 用來包圍 <例子列表>。
-- MUST: Good example 視為獨立檔案時, 要符合本 Rule 全部 MUST。
-- MUST: Bad example 視為獨立檔案時, 至少違反本 Rule 的一條 MUST。
+- MUST: Good example 視為獨立檔案時, 要符合其所屬 Rule 的全部 MUST。
+- MUST: Bad example 視為獨立檔案時, 至少違反其所屬 Rule 的一條 MUST。
 
 ### Good example
 
