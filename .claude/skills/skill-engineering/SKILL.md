@@ -9,8 +9,8 @@ description: 建立新 skill 或修改舊 skill 時必須使用此 skill。
 
 1. READ 讀取舊 skill 目錄下所有檔案 (新建時無檔可讀), 到下一步。
 2. READ 讀取本 skill 的 `rules/draft-sop-rule.md`, 到下一步。
-3. THINK 回答 (a) skill 名稱 (b) 觸發條件 (c) 最終產出物 (d) 參考本 skill 的 `rules/draft-sop-rule.md` 寫 high-level SOP, 答不出的標「待補」, 到下一步。
-4. ASK 列出 (a)~(d), 請使用者補齊並確認; 若有修改, 則回第 3 步; 否則到 Phase 2。
+3. THINK 回答 (a) skill 名稱 (b) 觸發條件 (c) 最終產出物 (d) 參考本 skill 的 `rules/draft-sop-rule.md` 寫 high-level SOP (e) 舊 skill 路徑 (新建時寫「無」), 答不出的標「待補」, 到下一步。
+4. ASK 列出 (a)~(e), 請使用者補齊並確認; 若有修改, 則回第 3 步; 否則到 Phase 2。
 
 ### Phase 2 -- 撰寫 SKILL.md
 
@@ -20,7 +20,7 @@ description: 建立新 skill 或修改舊 skill 時必須使用此 skill。
 
 ### Phase 3 -- 撰寫規則檔
 
-1. DELEGATE 分派給 `extract-skill-rule`, 傳入目標 skill 路徑, 到 Phase 4。
+1. DELEGATE 分派給 `extract-skill-rule`, 傳入來源 skill 路徑 (修改舊 skill 時為 (e), 新建時為目標 skill 路徑) 與目標 skill 路徑, 到 Phase 4。
 
 ### Phase 4 -- 檢查產出物
 
