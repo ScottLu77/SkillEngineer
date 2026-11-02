@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 列出 SKILL.md 中含規則訊號字或內嵌範例的句子, 並標註所在的 Phase 與步驟。
-# 本腳本即訊號字的唯一定義 (rules/rule-candidate-rule.md Rule 3 引用其輸出); 位置寫法須與該檔 Rule 1 一致。
+# 本腳本即訊號字的唯一定義 (rules/rule-candidate-rule.md Rule 3 引用其輸出); 位置中 Phase 與步驟的寫法須與該檔 Rule 1 一致, `目標 `/`來源 ` 前綴由呼叫者加上。
 #
 # 用法: find-signal-sentences.sh <SKILL.md>
 # 輸出: 每行一筆, tab 分隔: 行號  位置  [命中訊號]  句子
@@ -11,7 +11,7 @@ if [[ $# -ne 1 || ! -f $1 ]]; then
   exit 2
 fi
 
-SIGNALS='格式為|必須|不可|不得|禁止|只能|僅|一律|至少|最多|不超過|開頭|結尾|命名|從 1 開始|例如'
+SIGNALS='格式為|須|要|應該|不能|不可|不得|禁止|只能|僅|恰好|一律|至少|最多|不超過|開頭|結尾|命名|從 1 開始|例如|must|should|shall|never|always|only|at least|at most|required'
 
 awk -v signals="$SIGNALS" '
 BEGIN { n = split(signals, sig, "|"); loc = "(Phase 外)" }
@@ -52,7 +52,7 @@ infence {
   for (i = 1; i <= m; i++) {
     hits = ""
     for (j = 1; j <= n; j++)
-      if (index(sent[i], sig[j])) hits = hits (hits ? "," : "") sig[j]
+      if (index(tolower(sent[i]), sig[j])) hits = hits (hits ? "," : "") sig[j]
     if (hits != "") {
       s = sent[i]; sub(/^[ \t]*([0-9]+\.|-)?[ \t]*/, "", s)
       out = sprintf("L%d\t%s\t[%s]\t%s", NR, loc, hits, s)

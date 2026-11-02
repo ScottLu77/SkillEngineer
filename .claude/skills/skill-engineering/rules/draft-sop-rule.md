@@ -2,7 +2,7 @@
 
 - MUST: 以編號清單列出。
 - MUST: 每個步驟格式為 `**動詞短語**: 說明`。
-- MUST: 說明只寫「要做什麼事」, 不寫「怎麼做」。
+- MUST: 說明只有一個句號, 且不含動作詞 (READ、WRITE、RUN、THINK、ASK、TELL、DELEGATE)、指令與步驟編號。
 
 ### Good example
 

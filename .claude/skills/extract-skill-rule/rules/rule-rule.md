@@ -3,7 +3,7 @@
 - MUST: code fence 外, 每個 Rule 標題行的格式為 `## Rule <Rule 編號> -- <抬頭>`。
 - MUST: code fence 外的 <Rule 編號> 從 1 開始連續編號。
 - MUST: <抬頭> 以「規則」二字結尾。
-- MUST: <抬頭> 在「規則」之前寫出一個產出物部分的名稱。
+- MUST: <抬頭> 在「規則」之前寫出一個產出物部分 (產出物中的一個區段或欄位, 例如 Header) 的名稱。
 
 ### Good example
 
@@ -27,7 +27,7 @@ commit message 規則檔的 Rule 標題行錯誤案例
 
 - MUST: code fence 外, 每個 Rule 至少有一條 MUST。
 - MUST: code fence 外, 每個 Rule 的頂層清單項目都以 `- MUST: ` 開頭。
-- MUST: 兩位審查員只看產出物各自檢查 <必須遵守的細則>, 會得到相同的是或否判定。
+- MUST: 每條 <必須遵守的細則> 都可用是或否回答, 且不含程度詞 (如清楚、簡潔、適當、恰當、友善)。
 - MUST: 每條 MUST 只管一個對象; 同一個對象的多個條件可以合寫成一條。
 - MUST: Rule 下的每條 MUST 都約束 <抬頭> 中點名的同一個產出物部分。
 - MUST: 檔案中沒有兩條 MUST 對同一個產出物部分提出相同或相反的要求。
